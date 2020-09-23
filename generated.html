@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>M3U8 Player</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://unpkg.com/popper.js@1.12.3"></script>
+         <link href='https://www.shdowtech.com/favicon.ico' rel='icon' type='image/x-icon'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="home.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>      
+        <br>
+        <style>
+input[type="url"] { width: 35%; border-radius: 36px; outline: 0; transition: all 1s ease; border: 2px solid #a7a7a7; margin: 15px 0; padding: 3px 7px; font-weight: 700; } input[type="number"] { width: 66px; margin: 0 14px; text-align: center; border: 2px solid #a7a7a7; outline: 0; border-radius: 36px; padding: 3px 7px; font-weight: 700; transition: all 1s ease; } textarea#Gd { width: 95%; height: 100px; border: 2px solid #a7a7a7; border-radius: 10px; padding: 3px 6px; outline: 0; margin: 15px 0 0 0; font-weight: 700; transition: all 1s ease; } input[type="url"]:focus {width: 90%;border: 2px solid #091554;} input[type="number"]:focus {border: 2px solid #091554;} textarea#Gd:focus{border: 2px solid #091554;} lm#Gbd:hover {transform: translate(0px, 0px);} lm#Gbd { background: #141E30; background: -webkit-linear-gradient(to right, #243B55, #141E30); background: linear-gradient(to right, #243B55, #141E30); color: #fff; padding: 6px 9px; border-radius: 36px; font-size: 20px; font-weight: 700; cursor: pointer; transition: all 1s ease; display: inline-block; transform: translate(0px, 10px); }
+</style>
+<div style="text-align: center;">
+<input id="url" type="url" value="https://content.jwplatform.com/manifests/EqK9JUO2.m3u8">
+<br>
+<input id="Nh" type="number" value="400">
+<input id="Nw" type="number" value="727">
+<br><br>
+<lm id="Gbd">Generated</lm>
+<br><br>
+<textarea id="Gd"></textarea>
+    <script>
+Gbd.onclick = function() {
+    var 
+    u = document.getElementById("url").value,
+     h =document.getElementById("Nh").value,
+     w =document.getElementById("Nw").value,
+     g =document.getElementById("Gd"),
+     Alll='<iframe src="https://m3u8.mpd2019-top.com/player/#' + u + '" style="border: 2px solid #08103c;width:' + w + 'px;height:' + h + 'px;border-radius:8px;"></iframe>';
+    g.innerHTML = Alll;
+   }
+    </script>
+        
+    </body>
+</html>
